@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"  
+    android:layout_width="fill_parent"  
+    android:layout_height="fill_parent"  
+    android:orientation="vertical"
+    android:id="@+id/regisMain"
+    android:background="#eee" >
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+		 android:padding="30dip"
+    	 android:orientation="horizontal" >
+
+		<EditText android:id="@+id/name"
+		    android:hint="@string/enter_username_hint"
+		    android:gravity='center'
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+			android:padding="3dip"
+			android:drawSelectorOnTop="false"
+			android:scrollHorizontally="true" />
+	</LinearLayout>
+		
+    <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+		 android:padding="20dip"
+    	 android:orientation="vertical" >
+		<ImageView android:id="@+id/image"
+			 android:layout_height="152dp"
+			 android:layout_width="152dp"
+			 android:layout_gravity="center"
+			 android:gravity="center"
+			 android:src="@drawable/defaultavatar"
+			 android:padding="3dip" />
+		<Button android:id="@+id/upload" 
+		     android:padding="3dip"
+			 android:text="@string/btn_selimage"
+			 android:onClick="showPopuWindow"
+			 android:textColor="#ffffff"
+			 android:textSize="15sp" android:gravity="center"
+			 android:background="@drawable/btn_style_green"
+			 android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+			 android:scrollHorizontally="true" />
+	</LinearLayout>
+	
+    <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+		 android:padding="20dip"
+    	 android:orientation="vertical" >
+		<Button 
+			android:id="@+id/login" 
+			android:text="@string/btn_register" 
+			android:layout_width="fill_parent" 
+			android:layout_height="wrap_content"
+			android:textSize="15sp"
+			android:gravity="center"
+			android:background="@drawable/btn_style_white"
+			android:onClick="startRegister" />
+	</LinearLayout>
+</LinearLayout>
+
